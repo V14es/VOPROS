@@ -9,6 +9,7 @@ from user_database import find_chat_id_by_username, save_user, init_db
 
 # ID администратора
 ADMIN_ID = 1774089592 #5578102802#1774089592 #1362818165
+BOT_TOKEN = "7766587325:AAGe88zds_Aj-Q-KMNv65mkJWAvw14edSj4"
 
 # Включаем логирование
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
@@ -149,8 +150,7 @@ async def unban(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     # Создание приложения с вашим токеном
-    application = Application.builder().token(
-        "7766587325:AAGe88zds_Aj-Q-KMNv65mkJWAvw14edSj4").build()  # Замените YOUR_BOT_TOKEN на ваш токен
+    application = Application.builder().token(BOT_TOKEN).build()  # Замените YOUR_BOT_TOKEN на ваш токен
 
     # Обработчики команд и сообщений
     application.add_handler(CommandHandler("start", start))
