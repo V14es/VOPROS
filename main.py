@@ -8,7 +8,7 @@ from ai_sort import text_clear, start_ai
 from user_database import find_chat_id_by_username, save_user, init_db
 
 # ID администратора
-ADMIN_ID = 1774089592 #5578102802#1774089592 #1362818165
+ADMIN_ID = 1774089592
 BOT_TOKEN = "7766587325:AAGe88zds_Aj-Q-KMNv65mkJWAvw14edSj4"
 
 # Включаем логирование
